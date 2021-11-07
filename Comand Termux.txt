@@ -1,0 +1,13 @@
+pkg update && pkg upgrade
+apt update -y
+pkg install nodejs
+pkg install git
+pkg install wget
+pkg install ffmpeg
+pkg install imagemagick
+termux-setup-storage
+cd /sdcard
+cp -r V3 $HOME
+cd
+cd V3
+npm start
